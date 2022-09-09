@@ -8,12 +8,11 @@ int main(void)
 {
 	int num = 0;
 
-	while (num < 9)
+	for (; num < 9; num++)
 	{
 		putchar(num + '0');
 		putchar(',');
 		putchar(' ');
-		num++;
 	}
 	putchar(9 + '0');
 
