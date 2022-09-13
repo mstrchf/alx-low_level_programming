@@ -1,12 +1,14 @@
 #include "main.h"
 /**
  * _islower - checks for case of input char c
+ * @c: The character to print
  *
- * Return: 1 if c is lower, else 0
+ * Return: true 1 (Success)
+ * false 0
  */
 int _islower(int c)
 {
-	if (c >='a' && c <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
