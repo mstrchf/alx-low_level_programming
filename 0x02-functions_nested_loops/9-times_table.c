@@ -24,24 +24,22 @@ void times_table(void)
 				first_digit = result - last_digit;
 				first_digit = first_digit / 10;
 
+				
+				_putchar(',');
+				_putchar(' ');
+
 				_putchar(first_digit + '0');
 				_putchar(last_digit + '0');
-				
-				if (col < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
 			}
 			else
 			{
-				_putchar(result + '0');
-				
-				if (col < 9)
+				if (row > 0)
 				{
 					_putchar(',');
 					_putchar(' ');
+					_putchar(' ');
 				}
+				_putchar(result + '0');
 			}
 		}
 
