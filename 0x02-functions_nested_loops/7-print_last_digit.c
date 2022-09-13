@@ -13,3 +13,21 @@ int print_last_digit(int n)
 	_putchar('0' + last_digit);
 	return (last_digit);
 }
+
+/**
+ * _abs - get absolute value of number n
+ * @n: input
+ *
+ * Return: integer
+ */
+int _abs(int n)
+{
+	if (n < 0)
+	{
+		return (n * -1);
+	}
+	else
+	{
+		return (n);
+	}
+}
