@@ -59,7 +59,7 @@ void print_3(int result)
 	last_digit = result % 10;
 	last_two_digits = result % 100;
 	first_digit = (result - last_two_digits) / 100;
-	second_digit = (last_two_digits - last_digit) / 10
+	second_digit = (last_two_digits - last_digit) / 10;
 	_putchar(',');
 	_putchar(' ');
 	_putchar(first_digit + '0');
