@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _islower - checks for case of input char c
+ * _isalpha - checks if char c is letter
  * @c: The character to print
  *
  * Return: true 1 (Success)
  * false 0
  */
-int _islower(int c)
+int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
