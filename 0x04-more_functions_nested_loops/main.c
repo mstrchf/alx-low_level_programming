@@ -9,10 +9,38 @@
 int main(void)
 {
 	more_numbers();
+	_putchar('\n');
+	print_line(10);
+	_putchar('\n');
+	print_line(5);
+	_putchar('\n');
+	print_diagonal(2);
+	_putchar('\n');
 	print_diagonal(10);
+	_putchar('\n');
+	print_square(5);
 	return (0);
 
 
+}
+
+/**
+ * print_square - print square
+ * @size: size of square
+ *
+ * Return: void
+ */
+void print_square(int size)
+{
+        for (int i = 0; i < size; i++)
+        {
+                for (int j = 0; j < size; j++)
+                {
+                        _putchar('#');
+                }
+                _putchar('\n');
+        }
+        _putchar('\n');
 }
 
 /**
@@ -39,8 +67,6 @@ void more_numbers(void)
                 }
                 _putchar('\n');
         }
-
-        _putchar('\n');
 }
 
 /**
