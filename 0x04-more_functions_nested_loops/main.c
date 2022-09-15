@@ -8,20 +8,45 @@
  */
 int main(void)
 {
-	more_numbers();
-	_putchar('\n');
-	print_line(10);
-	_putchar('\n');
-	print_line(5);
-	_putchar('\n');
-	print_diagonal(2);
-	_putchar('\n');
-	print_diagonal(10);
-	_putchar('\n');
-	print_square(5);
+	print_triangle(0);
+	print_triangle(2);
+	print_triangle(10);
+	print_triangle(-4);
+	print_triangle(1);
 	return (0);
 
 
+}
+
+/**
+ * print_triangle - print triangle
+ * @size: height of triangle
+ *
+ * Return: void
+ */
+void print_triangle(int size)
+{
+        int i, j, k;
+
+        if (size <= 0)
+        {
+                _putchar('\n');
+        }
+        else
+        {
+                for (i = 0; i < size; i++)
+                {
+                        for (j = i + 1; j < size; j++)
+                        {
+                                _putchar(' ');
+                        }
+			for (k = i + 1; k > 0; k--)
+			{
+                        	_putchar('#');
+			}
+                        _putchar('\n');
+                }
+        }
 }
 
 /**
@@ -32,15 +57,21 @@ int main(void)
  */
 void print_square(int size)
 {
-        for (int i = 0; i < size; i++)
+	int i, j;
+	
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+
+        for (i = 0; i < size; i++)
         {
-                for (int j = 0; j < size; j++)
+		for (j = 0; j < size; j++)
                 {
                         _putchar('#');
                 }
                 _putchar('\n');
         }
-        _putchar('\n');
 }
 
 /**
@@ -76,14 +107,15 @@ void more_numbers(void)
  */
 void print_diagonal(int n)
 {
+	int i, j;
         if (n <= 0)
         {
                 _putchar('\n');
         }
         else
         {
-		for (int i = 1; i <= n; i++)
-		{	int j;
+		for (i = 0; i < n; i++)
+		{
                 	for (j = n - i; j < n; j++)
                 	{
                         	_putchar(' ');
@@ -102,13 +134,14 @@ void print_diagonal(int n)
  */
 void print_line(int n)
 {
+	int i;
         if (n <= 0)
         {
                 _putchar('\n');
         }
         else
         {
-                for (int i = 0; i < n; i++)
+                for (i = 0; i < n; i++)
                 {
                         _putchar('_');
                 }
