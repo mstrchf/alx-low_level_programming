@@ -7,7 +7,7 @@
  */
 void more_numbers(void)
 {
-	int count, num;
+	int count, num, last_digit;
 
 	for (count = 0; count <= 9; count++)
 	{
@@ -17,11 +17,10 @@ void more_numbers(void)
 			{
 				_putchar('1');
 			}
-			int last_digit;
 
 			last_digit = num % 10;
 			_putchar(last_digit + '0');
 		}
-		_putchar('\n');
+		
 	}
 }

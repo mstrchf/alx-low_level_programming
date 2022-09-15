@@ -50,7 +50,7 @@ void print_square(int size)
 
 void more_numbers(void)
 {
-        int count, num;
+        int count, last_digit, num;
 
         for (count = 0; count <= 9; count++)
         {
@@ -60,7 +60,6 @@ void more_numbers(void)
                         {
                                 _putchar('1');
                         }
-                        int last_digit;
 
                         last_digit = num % 10;
                         _putchar(last_digit + '0');
