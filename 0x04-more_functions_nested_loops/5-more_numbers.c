@@ -21,6 +21,5 @@ void more_numbers(void)
 			last_digit = num % 10;
 			_putchar(last_digit + '0');
 		}
-		
 	}
 }
