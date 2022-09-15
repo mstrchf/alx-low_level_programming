@@ -6,13 +6,38 @@
  * main - entry point
  * Return: Alvays 0 (Success)
  */
-
 int main(void)
 {
-	print_line(10);
-	print_line(5);
-	print_line(0);
+	print_diagonal(10);
 	return (0);
+
+
+}
+
+/**
+ * print_diagonal - print diagonal line
+ * @n: number of lines
+ *
+ * Return: void
+ */
+void print_diagonal(int n)
+{
+        if (n <= 0)
+        {
+                _putchar('\n');
+        }
+        else
+        {
+		for (int i = 1; i <= n; i++)
+		{	int j;
+                	for (j = n - i; j < n; j++)
+                	{
+                        	_putchar(' ');
+                	}
+			_putchar('\\');
+			_putchar('\n');
+		}
+        }
 }
 
 /**
@@ -21,7 +46,6 @@ int main(void)
  *
  * Return: void
  */
-
 void print_line(int n)
 {
         if (n <= 0)
@@ -43,7 +67,6 @@ void print_line(int n)
  * print_most_numbers - print numbers 0 to 9 excluding 2 and 4
  * Return: void
  */
-
 void print_most_numbers(void)
 {
 	int num;
