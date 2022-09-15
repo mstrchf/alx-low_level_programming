@@ -9,8 +9,34 @@
 
 int main(void)
 {
-	print_most_numbers();
+	print_line(10);
+	print_line(5);
+	print_line(0);
 	return (0);
+}
+
+/**
+ * print_line - print char n number of times
+ * @n: number of times to print char
+ *
+ * Return: void
+ */
+
+void print_line(int n)
+{
+        if (n <= 0)
+        {
+                _putchar('\n');
+        }
+        else
+        {
+                for (int i = 0; i < n; i++)
+                {
+                        _putchar('_');
+                }
+
+                _putchar('\n');
+        }
 }
 
 /**
