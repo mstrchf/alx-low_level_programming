@@ -9,17 +9,15 @@
 
 int main(void)
 {
-	int num;
+	int a;
+	int b;
 
-	num = 100;
-	printf("num before change through pointer: %d\n", num);
-	reset_to_98(&num);
-	printf("num after pointer manipulation: %d\n", num);
+	a = 50;
+	b = 100;
+
+	printf("a = %d - b = %d\n", a, b);
+	swap_int(&a, &b);
+	printf("a = %d - b = %d\n", a, b);
 
 	return (0);
-}
-
-void reset_to_98(int *n)
-{
-	*n = 98;
 }
