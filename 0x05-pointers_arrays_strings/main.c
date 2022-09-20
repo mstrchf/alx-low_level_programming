@@ -11,8 +11,8 @@ int main(void)
 {
 	char *str;
 
-	str = "Hello";
-	_puts(str);
+	str = "Hello, world!";
+	print_rev(str);
 	
 	return (0);
 }
