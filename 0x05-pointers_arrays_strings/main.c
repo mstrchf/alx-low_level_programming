@@ -9,15 +9,11 @@
 
 int main(void)
 {
-	int a;
-	int b;
+	char *str;
+	int len;
 
-	a = 50;
-	b = 100;
-
-	printf("a = %d - b = %d\n", a, b);
-	swap_int(&a, &b);
-	printf("a = %d - b = %d\n", a, b);
-
+	str = "Hello";
+	len = _strlen(str);
+	printf("%d\n", len);
 	return (0);
 }
