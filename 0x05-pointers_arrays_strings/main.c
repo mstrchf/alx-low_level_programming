@@ -12,7 +12,8 @@ int main(void)
 	char *str;
 
 	str = "Hello, world!";
-	print_rev(str);
+	rev_string(str);
+	printf("%s\n", str);
 	
 	return (0);
 }
