@@ -10,11 +10,10 @@ char *cap_string(char *s)
 {
 	int i;
 
-	i = 0;
-	
+	i = 1;
 	while (s[i] != '\0')
 	{
-		switch (s[i])
+		switch (s[i - 1])
 		{
 			case ' ':
 			case '\t':
@@ -29,9 +28,9 @@ char *cap_string(char *s)
 			case ')':
 			case '{':
 			case '}':
-				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				if (s[i] >= 'a' && s[i] <= 'z')
 				{
-					s[i + 1] = s[i + 1] - 32;
+					s[i] = s[i] - 32;
 				}
 				break;
 			default:
