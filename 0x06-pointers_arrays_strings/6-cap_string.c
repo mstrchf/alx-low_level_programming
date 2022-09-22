@@ -11,9 +11,7 @@ char *cap_string(char *s)
 	int i;
 
 	i = 0;
-	s[i] = s[i] - 32;
-
-	i++;
+	
 	while (s[i] != '\0')
 	{
 		switch (s[i])
