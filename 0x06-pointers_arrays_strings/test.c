@@ -1,22 +1,22 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+
 /**
- * main - entry point
- * Return: 0
+ * main - check the code
+ * @a: an array of integers
+ * @n: the number of elements to swap
+ *
+ * Return: nothing.
  */
+
 int main(void)
 {
-	char s1[98];
-	char s2[] = "World!\n";
+	char str[] = "Look up!\n";
 	char *ptr;
 
-	ptr = _strncpy(s1, s2, 1);
+	ptr = string_toupper(str);
 	printf("%s", ptr);
-	printf("%s", s1);
-
-	ptr = _strncpy(s1, s2, 50);
-	printf("%s", s1);
-	printf("%s", ptr);
+	printf("%s", str);
 
 	return (0);
 }
