@@ -22,7 +22,7 @@ char *cap_string(char *s)
 			else
 			{
 				switch (s[i - 1])
-				{	
+				{
 					case ' ':
 					case '\t':
 					case '\n':
