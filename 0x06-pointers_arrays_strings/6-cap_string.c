@@ -13,34 +13,36 @@ char *cap_string(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (i == 0)
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			s[i] = s[i] - 32;
-		}
-		switch (s[i - 1])
-		{
-			case ' ':
-			case '\t':
-			case '\n':
-			case ',':
-			case ';':
-			case '.':
-			case '!':
-			case '?':
-			case '"':
-			case '(':
-			case ')':
-			case '{':
-			case '}':
-				if (s[i] >= 'a' && s[i] <= 'z')
-				{
-					s[i] = s[i] - 32;
+			if (i == 0)
+			{
+				s[i] = s[i] - 32;
+			}
+			else
+			{
+				switch (s[i - 1])
+				{	
+					case ' ':
+					case '\t':
+					case '\n':
+					case ',':
+					case ';':
+					case '.':
+					case '!':
+					case '?':
+					case '"':
+					case '(':
+					case ')':
+					case '{':
+					case '}':
+						s[i] = s[i] - 32;
+						break;
+					default:
+						break;
 				}
-				break;
-			default:
-				break;
+			}
 		}
-
 		i++;
 	}
 
