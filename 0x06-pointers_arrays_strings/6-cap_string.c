@@ -10,10 +10,13 @@ char *cap_string(char *s)
 {
 	int i;
 
-	s[0] = s[0] - 32;
-	i = 1;
+	i = 0;
 	while (s[i] != '\0')
 	{
+		if (i == 0)
+		{
+			s[i] = s[i] - 32;
+		}
 		switch (s[i - 1])
 		{
 			case ' ':
