@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stddef.h>
 /**
  * _strchr - return pointer to the first occurence of
  * the character c in the string s
@@ -21,6 +21,6 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	return ('\0');
+	return (NULL);
 }
 
