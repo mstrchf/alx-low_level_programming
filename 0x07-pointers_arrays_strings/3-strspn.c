@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strspn - get length of initial segment of s which 
+ * _strspn - get length of initial segment of s which
  * consists entirely of bytes in accept
- * @accept string containing the characters to match
+ * @accept: string containing the characters to match
  * @s: string to be scanned
  *
  * Return: size_t, length
